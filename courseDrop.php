@@ -4,8 +4,7 @@
 <html>
 <link rel="stylesheet" type="text/css" href = "main.css">
 <head>
-<title> Register for Course </title>
-
+<title>Drop a course</title>
 </head>
 <body>
   <?php
@@ -56,8 +55,6 @@
     // display all courses information
     $result = mysqli_query($db, $query);
     echo "All Courses " . '<br />';
-    ?>
-    <!-- Insert a table for showing all courses available -->
     <table>
       <thead>
         <tr>

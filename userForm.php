@@ -6,12 +6,13 @@
   }
 
   mysqli_select_db($con, DB_DATABASE);
-  $sql = "INSERT INTO coursestaken (CourseID, StudentUFID)
-  VALUES ('$_POST[courseID]','$_POST[StudentUFID]')";
+  $sql = "INSERT INTO accounts (username, password, email)
+  VALUES ('$_POST[username]','$_POST[password]','$_POST[email]')";
 
   if(!mysqli_query($con, $sql)){
     die("Error, could not query the database: <br /> " . mysqli_error($con));
   }
-  echo "1 record added";
+  echo "You have been registered!";
+  header("Location: login.php");
   mysqli_close($con)
   ?>

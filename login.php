@@ -69,6 +69,7 @@
          </div>
 
       </div>
+      <h2><a href = "userRegister.php"> New user? Register an account! </a></h2>
 
    </body>
 </html>
